@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class ButtonsController : MonoBehaviour
 {
-    //class name?
     [SerializeField] private GameObject _panelPrefab = default;
     [SerializeField] private Button _lootButton = default;
     [SerializeField] private Button _exitButton = default;

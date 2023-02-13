@@ -32,7 +32,6 @@ public class ScrollingController : MonoBehaviour
         for (int i = 0; i < _panelCount; i++)
         {
             _panels[i] = Instantiate(_scrollPanel, transform, false);
-            // what is "false"?
 
             if(i == 0)
             {
@@ -99,8 +98,7 @@ public class ScrollingController : MonoBehaviour
 
     private int GetNearestPanel()
     {
-        //?
-        var minDistance = 300f;
+        var minDistance = _panelsPos[0].x;
         var index = 0;
         for (int i = 0; i < _panelCount; i++)
         {
